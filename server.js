@@ -3,6 +3,10 @@ var express=require('express');
 var mysql=require('mysql');
 var path = require('path');
 var morgan = require('morgan');
+var multer  = require('multer');
+var router=express.Router();
+var upload = multer({ dest: 'ui/uploads/' });
+
 var app=express();
 //app.use(morgan('combined'));
 var connection=mysql.createConnection({
@@ -18,6 +22,9 @@ connection.connect(function(error){
   else {
     console.log("connected");
   }
+});
+router.post('/upload',upload.any(),function(req,res){
+  res.send(req.files);
 });
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'i.html'));
@@ -43,7 +50,8 @@ app.get('/admin_check/:id',function(req,res){
 });
 
 
-var port = 3001;
+/*var port = 3001;
 app.listen(port, function () {
   console.log(`Server is listening on port ${port}!`);
-});
+});*/
+app.listen(3000,"0.0.0.0");

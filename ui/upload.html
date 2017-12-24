@@ -1,8 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" src="/ui/main.js"></script>
+    <link rel="stylesheet" href="/ui/style.css">
 </head>
 <body>
-  <h1>Hi</h1>
+  <h1 class="w3-center">Question paper making</h1>
+  <div class="w3-center w3-container">
+  <form method="post" enctype="multipart/form-data">
+  <label>Name of the test</label><br>
+  <input type="text" id="test_name"><br>
+  <label>Total number of questions</label><br>
+<input type="number" id="noOfQuestions"><br>
+  <label>Duration of exam(minutes)</label><br>
+  <input type="number" id="testTime"><br>
+  <label>Target students</label><br>
+  <label>Year</label>
+  <select>
+<option>I</option>
+<option>II</option>
+<option>III</option>
+<option>IV</option>
+  </select>
+  <label>Branch</label>
+  <select>
+<option>CSE</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>MEC</option>
+<option>CE</option>
+  </select>
+<br>
+  <label>Number of question paper sets</label>
+  <input type="radio" name="no_of_sets" onclick="setUpload(1)">1
+  <input type="radio" name="no_of_sets"  onclick="setUpload(2)">2
+  <input type="radio" name="no_of_sets"  onclick="setUpload(3)">3
+  <input type="radio" name="no_of_sets"  onclick="setUpload(4)">4
+  <div id="s1" style="display:none">
+    <label>Choose pdf for set A</label><br>
+    <input type="file" id="set1"><br>
+    <label>Enter key for set A</label><br>
+    <input type="text" id="set1Key"><br>
+  </div>
+  <div id="s2" style="display:none">
+    <label>Choose pdf for set A</label><br>
+    <input type="file" id="set1"><br>
+    <label>Choose pdf for set B</label><br>
+    <input type="file" id="set2"><br>
+    <label>Enter key for set A</label><br>
+    <input type="text" id="set1Key"><br>
+    <label>Enter key for set B</label><br>
+    <input type="text" id="set2Key"><br>
+  </div>
+  <div id="s3" style="display:none">
+    <label>Choose pdf for set A</label><br>
+    <input type="file" id="set1"><br>
+    <label>Choose pdf for set B</label><br>
+    <input type="file" id="set2"><br>
+    <label>Choose pdf for set C</label><br>
+    <input type="file" id="set3"><br>
+    <label>Enter key for set A</label><br>
+    <input type="text" id="set1Key"><br>
+    <label>Enter key for set B</label><br>
+    <input type="text" id="set2Key"><br>
+    <label>Enter key for set C</label><br>
+    <input type="text" id="set3Key"><br>
+  </div>
+  <div id="s4" style="display:none">
+    <label>Choose pdf for set A</label><br>
+    <input type="file" id="set1"><br>
+    <label>Choose pdf for set B</label><br>
+    <input type="file" id="set2"><br>
+    <label>Choose pdf for set C</label><br>
+    <input type="file" id="set3"><br>
+    <label>Choose pdf for set D</label><br>
+    <input type="file" id="set4"><br>
+    <label>Enter key for set A</label><br>
+    <input type="text" id="set1Key"><br>
+    <label>Enter key for set B</label><br>
+    <input type="text" id="set2Key"><br>
+    <label>Enter key for set C</label><br>
+    <input type="text" id="set3Key"><br>
+    <label>Enter key for set D</label><br>
+    <input type="text" id="set4Key"><br>
+  </div>
+  <br>
+<button class="w3-btn w3-teal" type="submit" >Submit</button>
+</div>
+  </form>
 </body>
 </html>
