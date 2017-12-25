@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/ui/style.css">
         <script type="text/javascript" src="/ui/main.js"></script>
+        <style>
+        body {
+    background-image: url("image.gif");
+}
+
+        </style>
 </head>
 <body>
-  <h1 class="w3-container">AITS Online exam portal</h1>
   <center>
-  <form>
-    <label>Username</label><br>
-  <input type="text" id="admin_id"><br>
-  <label>Password</label><br>
-  <input type="password" id="admin_pass"><br>
-  <button type="submit" onclick="admin_log()">login</button>
+  <img src="logo.jpg" >
+</center>
+  <h1 class="w3-container w3-text-white w3-center">AITS Online exam portal-Admin login</h1>
+  <center>
+    <div class="w3-container w3-center w3-margin ">
+  <form >
+    <label class="w3-text-white">Username</label><br>
+  <input class="w3-round-large" type="text" id="admin_id"><br>
+  <label class="w3-text-white">Password</label><br>
+  <input class="w3-round-large" type="password" id="admin_pass"><br>
+  <button  class="w3-btn w3-grey w3-margin w3-round-xxlarge" type="submit" onclick="admin_log()">login</button>
   </form>
+</div>
 </center>
 </body>
 </html>

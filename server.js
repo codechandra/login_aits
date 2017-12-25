@@ -13,7 +13,7 @@ var connection=mysql.createConnection({
   host:'localhost',
   user:'root',
   password:'',
-  database:'pdf'
+  database:'exam'
 });
 connection.connect(function(error){
   if(error){
@@ -23,12 +23,16 @@ connection.connect(function(error){
     console.log("connected");
   }
 });
-router.post('/upload',upload.any(),function(req,res){
-  res.send(req.files);
-});
 app.get('/',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'i.html'));
 });
+app.get('/image.gif',function(req,res){
+  res.sendFile(path.join(__dirname, 'ui', 'image.gif'));
+});
+app.get('/logo.jpg',function(req,res){
+  res.sendFile(path.join(__dirname, 'ui', 'logo.jpg'));
+});
+
 app.get('/ui/main.js',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
@@ -46,12 +50,55 @@ app.get('/admin',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'admin_login.html'));
 });
 app.get('/admin_check/:id',function(req,res){
-  res.send(req.params.id);
+  var value=req.params.id;
+    var m=value.split('$');
+   var id=(m[0]);
+   var pass=(m[1]);
+
+       connection.query('SELECT status FROM admin where (username=? AND password=?)',[id,pass],function(err,rows,fields){
+      if(err){
+        //console.log(res);
+          res.status(500).send(err.toString());
+
+      }
+      else
+      {
+        if(JSON.stringify(rows).length==2)
+        {
+          res.send("Error");
+      }
+      else {
+        res.send("Success");
+      }
+  }
+});
+});
+app.get('/upload/paperset/:id',function(req,res){
+  var value=req.params.id;
+    var m=value.split('$');
+   var one=(m[0]);
+   var two=(m[1]);
+   var three=m[2];
+   var four=m[3];
+   var five=m[4];
+
+       connection.query('INSERT INTO questionpapers(test_name,questions_count,test_time,year,branch) VALUES (?,?,?,?)',[one,two,three,four,five],function(err,rows,fields){
+      if(err){
+        //console.log(res);
+          res.status(500).send(err.toString());
+
+      }
+      else
+      {
+        res.send("Thank you");
+  }
+});
 });
 
 
-/*var port = 3001;
+
+
+var port = 3000;
 app.listen(port, function () {
   console.log(`Server is listening on port ${port}!`);
-});*/
-app.listen(3000,"0.0.0.0");
+});

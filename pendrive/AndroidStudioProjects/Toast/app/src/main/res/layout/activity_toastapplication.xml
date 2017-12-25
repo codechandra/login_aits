@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Toast"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:backgroundTintMode="add"
+    tools:context="in.edu.apssdc.toast.Toastapplication">
+
+    <Button
+        android:id="@+id/button4"
+
+        android:layout_width="match_parent"
+        android:layout_height="1"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:onClick="toast"
+        android:text="@string/button"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="80"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/textview"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="90"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+       android:onClick="count"
+        android:text="@string/button1"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorAccent"/>
+</LinearLayout>

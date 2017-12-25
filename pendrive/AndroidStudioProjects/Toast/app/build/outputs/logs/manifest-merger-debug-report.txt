@@ -1,0 +1,87 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\IBM\.android\build-cache\108f9bc0c1b87b7e12a587e634c6b612a8051558\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\IBM\.android\build-cache\5e0c3d288ebd77288b6bde494b8063def9ff0888\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\IBM\.android\build-cache\b22c4b20cf6031ed45f53ec993bf3598f64a46a9\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\IBM\.android\build-cache\011a34ba8949cb7c2bb44eee62bc1e7d26a26702\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\IBM\.android\build-cache\1cbfac23bbddfbf346da20c4141a18a2081fd577\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\IBM\.android\build-cache\dab595250bc819836d4d12b3137f951ef38ef87e\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\IBM\.android\build-cache\115e95c665974d2b7421f076b579327a6ffba034\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\IBM\.android\build-cache\6de7bb7ef9b9ab4a1e754d0d696532a81cd7aac6\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\IBM\.android\build-cache\f37b112257cc27e61453ff908533277d61cfe713\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\IBM\.android\build-cache\0af473f6562cc4c502cf79ed831c0d680a046ec3\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:11:9-40
+activity#in.edu.apssdc.toast.Toastapplication
+ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:12:19-51
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\IBM\.android\build-cache\108f9bc0c1b87b7e12a587e634c6b612a8051558\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\IBM\.android\build-cache\5e0c3d288ebd77288b6bde494b8063def9ff0888\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\IBM\.android\build-cache\b22c4b20cf6031ed45f53ec993bf3598f64a46a9\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\IBM\.android\build-cache\011a34ba8949cb7c2bb44eee62bc1e7d26a26702\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\IBM\.android\build-cache\1cbfac23bbddfbf346da20c4141a18a2081fd577\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\IBM\.android\build-cache\dab595250bc819836d4d12b3137f951ef38ef87e\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\IBM\.android\build-cache\115e95c665974d2b7421f076b579327a6ffba034\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\IBM\.android\build-cache\6de7bb7ef9b9ab4a1e754d0d696532a81cd7aac6\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\IBM\.android\build-cache\f37b112257cc27e61453ff908533277d61cfe713\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\IBM\.android\build-cache\0af473f6562cc4c502cf79ed831c0d680a046ec3\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\IBM\.android\build-cache\108f9bc0c1b87b7e12a587e634c6b612a8051558\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\IBM\AndroidStudioProjects\Toast\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\IBM\.android\build-cache\108f9bc0c1b87b7e12a587e634c6b612a8051558\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\IBM\.android\build-cache\5e0c3d288ebd77288b6bde494b8063def9ff0888\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\IBM\.android\build-cache\b22c4b20cf6031ed45f53ec993bf3598f64a46a9\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\IBM\.android\build-cache\011a34ba8949cb7c2bb44eee62bc1e7d26a26702\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\IBM\.android\build-cache\1cbfac23bbddfbf346da20c4141a18a2081fd577\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\IBM\.android\build-cache\dab595250bc819836d4d12b3137f951ef38ef87e\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\IBM\.android\build-cache\115e95c665974d2b7421f076b579327a6ffba034\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\IBM\.android\build-cache\6de7bb7ef9b9ab4a1e754d0d696532a81cd7aac6\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\IBM\.android\build-cache\f37b112257cc27e61453ff908533277d61cfe713\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\IBM\.android\build-cache\108f9bc0c1b87b7e12a587e634c6b612a8051558\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\IBM\.android\build-cache\108f9bc0c1b87b7e12a587e634c6b612a8051558\output\AndroidManifest.xml:26:9-47
