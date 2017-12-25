@@ -24,7 +24,7 @@ connection.connect(function(error){
   }
 });
 app.get('/',function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'i.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
 app.get('/image.gif',function(req,res){
   res.sendFile(path.join(__dirname, 'ui', 'image.gif'));
